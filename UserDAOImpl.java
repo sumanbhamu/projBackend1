@@ -1,7 +1,11 @@
 package com.niit.shopping.dao;
 
-public class UserDAOImpl implements UserDAO {
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 
+public class UserDAOImpl implements UserDAO {
+@Autowired
+SessionFactory sessionFactory;
 	public boolean isValidate(String name, String pass)
 	{
 		{
@@ -18,5 +22,10 @@ public class UserDAOImpl implements UserDAO {
 		}
 
 	}
+	public UserDAOImpl(SessionFactory sessionFactory) {
+		super();
+		this.sessionFactory = sessionFactory;
+	}
+	
 
 }
