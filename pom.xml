@@ -16,6 +16,7 @@
     </dependency>
  
  <!-- Database Dependencies -->
+
     
     <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
 <dependency>
@@ -24,6 +25,7 @@
     <version>5.2.3.Final</version>
 </dependency>
 
+<!-- using orm technology -->
 <!-- https://mvnrepository.com/artifact/org.springframework/spring-orm -->
 <dependency>
     <groupId>org.springframework</groupId>
@@ -31,6 +33,7 @@
     <version>4.3.3.RELEASE</version>
 </dependency>
 
+<!-- h2 type of database -->
 <!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
 <dependency>
     <groupId>com.h2database</groupId>
@@ -38,6 +41,7 @@
     <version>1.3.176</version>
 </dependency>
 
+<!-- for data source -->
 <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-dbcp2 -->
 <dependency>
     <groupId>org.apache.commons</groupId>
@@ -46,6 +50,7 @@
 </dependency>
 
     
+    <!-- for entity -->
     <!-- https://mvnrepository.com/artifact/org.springframework/spring-context -->
 <dependency>
     <groupId>org.springframework</groupId>
@@ -61,6 +66,13 @@
     <version>4.3.3.RELEASE</version>
 </dependency>
     
+    <!-- for notnull ,notempty -->
+    <!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-validator -->
+<dependency>
+    <groupId>org.hibernate</groupId>
+    <artifactId>hibernate-validator</artifactId>
+    <version>5.3.0.Final</version>
+</dependency>
     
   </dependencies>
 </project>
